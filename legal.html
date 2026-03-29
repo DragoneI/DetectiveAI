@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>AI Detective Pro — Legal Notice & Terms of Use</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Legal page specific styles */
+        .legal-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px 2rem 4rem;
+        }
+
+        .legal-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .legal-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: var(--font-mono);
+            font-size: 0.66rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--neon);
+            border: 1px solid rgba(0,245,160,0.3);
+            background: var(--neon-dim);
+            padding: 0.4rem 0.9rem;
+            border-radius: var(--r-sm);
+            margin-bottom: 1.75rem;
+        }
+
+        .legal-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--neon) 0%, #00C9FF 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .legal-subtitle {
+            font-size: 1.1rem;
+            color: var(--txt-2);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .legal-updated {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--txt-3);
+            margin-top: 1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .legal-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--line);
+            border-top: 1px solid var(--line);
+        }
+
+        .legal-nav-link {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            letter-spacing: 0.06em;
+            text-decoration: none;
+            color: var(--txt-3);
+            padding: 0.5rem 1rem;
+            border-radius: var(--r-sm);
+            transition: all 0.2s;
+        }
+
+        .legal-nav-link:hover {
+            color: var(--neon);
+            background: var(--neon-dim);
+        }
+
+        .legal-section {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: var(--r-lg);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s;
+        }
+
+        .legal-section:hover {
+            border-color: var(--line-2);
+            box-shadow: var(--s-card);
+        }
+
+        .legal-section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .legal-section-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--neon-dim);
+            border: 1px solid rgba(0,245,160,0.2);
+            border-radius: var(--r-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .legal-section-icon i {
+            font-size: 1.25rem;
+            color: var(--neon);
+        }
+
+        .legal-section-title {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--txt-1);
+            margin: 0;
+        }
+
+        .legal-section-subtitle {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--txt-3);
+            letter-spacing: 0.05em;
+            margin-top: 0.25rem;
+        }
+
+        .legal-content {
+            color: var(--txt-2);
+            line-height: 1.7;
+        }
+
+        .legal-content h3 {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--txt-1);
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        .legal-content h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .legal-content p {
+            margin-bottom: 1rem;
+        }
+
+        .legal-content strong {
+            color: var(--neon);
+            font-weight: 600;
+        }
+
+        .legal-content ul, .legal-content ol {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .legal-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-content .highlight-box {
+            background: var(--ink-3);
+            border-left: 3px solid var(--amber);
+            padding: 1rem 1.5rem;
+            border-radius: var(--r-md);
+            margin: 1rem 0;
+        }
+
+        .legal-content .warning-box {
+            background: var(--red-dim);
+            border-left: 3px solid var(--red);
+            padding: 1rem 1.5rem;
+            border-radius: var(--r-md);
+            margin: 1rem 0;
+        }
+
+        .legal-content .info-box {
+            background: var(--neon-dim);
+            border-left: 3px solid var(--neon);
+            padding: 1rem 1.5rem;
+            border-radius: var(--r-md);
+            margin: 1rem 0;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--neon);
+            text-decoration: none;
+            margin-top: 2rem;
+            padding: 0.75rem 1.25rem;
+            border: 1px solid rgba(0,245,160,0.3);
+            border-radius: var(--r-sm);
+            transition: all 0.2s;
+        }
+
+        .back-link:hover {
+            background: var(--neon-dim);
+            transform: translateX(-4px);
+        }
+
+        @media (max-width: 768px) {
+            .legal-container {
+                padding: 100px 1rem 2rem;
+            }
+            .legal-section {
+                padding: 1.5rem;
+            }
+            .legal-nav {
+                gap: 0.5rem;
+            }
+            .legal-nav-link {
+                font-size: 0.6rem;
+                padding: 0.35rem 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="AI Detective" width="28" height="28" style="border-radius: 4px;">
+                </div>
+                <span class="logo-text">AI<span class="logo-highlight">Detective</span></span>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#detector" class="nav-link">Detector</a>
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+
+            <a href="index.html#detector" class="nav-cta">Analyze →</a>
+
+            <button class="mobile-menu" id="mobileMenuBtn" aria-label="Open menu">
+                <i class="fas fa-bars" id="menuIcon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-drawer" id="mobileDrawer">
+        <a href="index.html#home" class="mobile-nav-link">Home <span class="arrow">→</span></a>
+        <a href="index.html#detector" class="mobile-nav-link">Image Detector <span class="arrow">→</span></a>
+        <a href="index.html#features" class="mobile-nav-link">Features <span class="arrow">→</span></a>
+        <a href="index.html#about" class="mobile-nav-link">About <span class="arrow">→</span></a>
+        <a href="index.html#contact" class="mobile-nav-link">Contact <span class="arrow">→</span></a>
+        <a href="index.html#detector" class="mobile-cta">Start Analysis →</a>
+    </div>
+
+    <main class="legal-container">
+        <div class="legal-header">
+            <div class="legal-badge">
+                <i class="fas fa-gavel"></i>
+                <span>Legal Information</span>
+            </div>
+            <h1 class="legal-title">Legal Notice<br>& Terms of Use</h1>
+            <p class="legal-subtitle">Transparency, accountability, and usage framework for AI Detective</p>
+            <div class="legal-updated">
+                <i class="fas fa-calendar-alt"></i> Last updated: March 26, 2026
+            </div>
+        </div>
+
+        <div class="legal-nav">
+            <a href="#publisher" class="legal-nav-link">Publisher</a>
+            <a href="#terms" class="legal-nav-link">Terms of Use</a>
+            <a href="#limitations" class="legal-nav-link">Limitations</a>
+            <a href="#privacy" class="legal-nav-link">Privacy Policy</a>
+            <a href="#liability" class="legal-nav-link">Liability</a>
+            <a href="#intellectual" class="legal-nav-link">Intellectual Property</a>
+        </div>
+
+        <!-- PUBLISHER SECTION -->
+        <section id="publisher" class="legal-section">
+            <div class="legal-section-header">
+                <div class="legal-section-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div>
+                    <h2 class="legal-section-title">Service Publisher</h2>
+                    <p class="legal-section-subtitle">Identification and legal information</p>
+                </div>
+            </div>
+            <div class="legal-content">
+                <p><strong>AI Detective</strong> is a probabilistic analysis tool developed and published by:</p>
+                <p>
+                    <strong>Dragone Technology</strong><br>
+                    Address: [Your complete address]<br>
+                    Email: <a href="mailto:dragonetechnology@gmail.com" style="color: var(--neon);">dragonetechnology@gmail.com</a><br>
+                    SIRET: [To be completed]<br>
+                    EU VAT Number: [To be completed]
+                </p>
+                <p>
+                    Publication Director: [Responsible person's name]<br>
+                    Hosting: Cloudflare, Inc. - 101 Townsend St, San Francisco, CA 94107, United States
+                </p>
+            </div>
+        </section>
+
+        <!-- TERMS OF USE SECTION -->
+        <section id="terms" class="legal-section">
+            <div class="legal-section-header">
+                <div class="legal-section-icon">
+                    <i class="fas fa-file-contract"></i>
+                </div>
+                <div>
+                    <h2 class="legal-section-title">Terms of Use</h2>
+                    <p class="legal-section-subtitle">Usage framework for the tool</p>
+                </div>
+            </div>
+            <div class="legal-content">
+                <p>By using AI Detective, you fully and unconditionally accept these Terms of Use.</p>
+                
+                <h3>1. Nature of the Tool</h3>
+                <p>AI Detective is an <strong>analytical assistance tool</strong> that provides <strong>probabilistic estimates</strong> based on multiple artificial intelligence models. The results presented do not constitute <strong>absolute proof</strong> and cannot substitute for informed human judgment.</p>
+                
+                <div class="info-box">
+                    <i class="fas fa-chart-line" style="margin-right: 0.5rem;"></i>
+                    <strong>Probabilistic Nature:</strong> All results are expressed as probabilities (0-100%) and accompanied by a confidence level (low / medium / high). No claim of certainty is made.
+                </div>
+
+                <h3>2. Access to the Service</h3>
+                <p>Access to AI Detective is free and does not require account creation. The publisher reserves the right to modify, suspend, or discontinue access to the service at any time without notice, particularly for maintenance, updates, or force majeure reasons.</p>
+
+                <h3>3. Authorized Use</h3>
+                <p>The user agrees to use AI Detective only within a legal and respectful framework. The following are strictly prohibited:</p>
+                <ul>
+                    <li>Using the tool for illegal, fraudulent, or malicious activities;</li>
+                    <li>Attempting to disassemble, decompile, or extract the source code of the models;</li>
+                    <li>Using the results to infringe upon the rights of third parties;</li>
+                    <li>Intentionally submitting violent, hateful, or morally objectionable content.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- LIMITATIONS AND WARNINGS SECTION -->
+        <section id="limitations" class="legal-section">
+            <div class="legal-section-header">
+                <div class="legal-section-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div>
+                    <h2 class="legal-section-title">Limitations and Warnings</h2>
+                    <p class="legal-section-subtitle">What the tool does not do and does not guarantee</p>
+                </div>
+            </div>
+            <div class="legal-content">
+                <div class="warning-box">
+                    <i class="fas fa-brain" style="margin-right: 0.5rem;"></i>
+                    <strong>IMPORTANT:</strong> The artificial intelligence models used (TensorFlow.js, LLaVA, pixel analysis) can make errors, produce false positives or false negatives. Results should never be considered absolute truth.
+                </div>
+
+                <h3>1. Accuracy and Reliability</h3>
+                <p>The probability scores generated by AI Detective are <strong>estimates</strong> based on statistical analysis of visual patterns. The accuracy of these estimates can vary significantly based on:</p>
+                <ul>
+                    <li>The quality and resolution of the analyzed image;</li>
+                    <li>The presence of compression artifacts unrelated to AI;</li>
+                    <li>The inherent limitations of machine learning models;</li>
+                    <li>The rapid evolution of image generation technologies.</li>
+                </ul>
+
+                <h3>2. Not a Judicial Investigation Tool</h3>
+                <p>AI Detective is not certified as a judicial or forensic investigation tool. Results cannot be used as evidence in judicial, disciplinary, or administrative proceedings without thorough and contradictory human verification.</p>
+
+                <h3>3. Technological Evolution</h3>
+                <p>AI image generation technologies are evolving rapidly. AI Detective may not detect content generated by the most recent models. Users are advised to exercise caution and not rely solely on the tool's results.</p>
+
+                <div class="highlight-box">
+                    <i class="fas fa-user-check" style="margin-right: 0.5rem;"></i>
+                    <strong>Recommendation:</strong> Use AI Detective as an alert and orientation tool. For any important decision, consult image analysis experts or qualified professionals.
+                </div>
+            </div>
+        </section>
+
+        <!-- DATA PROTECTION SECTION -->
+        <section id="privacy" class="legal-section">
+            <div class="legal-section-header">
+                <div class="legal-section-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div>
+                    <h2 class="legal-section-title">Data Protection</h2>
+                    <p class="legal-section-subtitle">GDPR compliance and confidentiality</p>
+                </div>
+            </div>
+            <div class="legal-content">
+                <h3>1. Image Processing</h3>
+                <p><strong>No images are stored on our servers.</strong> Processing is performed as follows:</p>
+                <ul>
+                    <li><strong>TensorFlow.js:</strong> Fully local analysis in your browser. No data is transmitted.</li>
+                    <li><strong>Pixel Analysis:</strong> Fully local analysis in your browser. No data is transmitted.</li>
+                    <li><strong>LLaVA via Cloudflare:</strong> The image is temporarily transmitted to the Cloudflare Worker for analysis. It is processed in memory and immediately deleted after analysis. No persistence.</li>
+                </ul>
+
+                <h3>2. Browsing Data</h3>
+                <p>The site uses technical cookies necessary for functionality. No advertising or tracking cookies are used. Anonymized browsing data may be collected for audience analysis purposes.</p>
+
+                <h3>3. Your Rights</h3>
+                <p>In accordance with the General Data Protection Regulation (GDPR), you have the following rights:</p>
+                <ul>
+                    <li>Right of access to your personal data;</li>
+                    <li>Right to rectification;</li>
+                    <li>Right to erasure ("right to be forgotten");</li>
+                    <li>Right to restriction of processing;</li>
+                    <li>Right to data portability.</li>
+                </ul>
+                <p>To exercise these rights, contact us at: <a href="mailto:dragonetechnology@gmail.com" style="color: var(--neon);">dragonetechnology@gmail.com</a></p>
+            </div>
+        </section>
+
+        <!-- LIABILITY SECTION -->
+        <section id="liability" class="legal-section">
+            <div class="legal-section-header">
+                <div class="legal-section-icon">
+                    <i class="fas fa-scale-balanced"></i>
+                </div>
+                <div>
+                    <h2 class="legal-section-title">Limitation of Liability</h2>
+                    <p class="legal-section-subtitle">Publisher's liability framework</p>
+                </div>
+            </div>
+            <div class="legal-content">
+                <div class="warning-box">
+                    <i class="fas fa-gavel" style="margin-right: 0.5rem;"></i>
+                    <strong>Disclaimer Clause:</strong> The publisher cannot be held responsible for decisions made based on the results provided by AI Detective.
+                </div>
+
+                <h3>1. Limited Liability</h3>
+                <p>The publisher strives to ensure the accuracy and reliability of the information provided. However, due to the probabilistic nature of the models used, the publisher cannot guarantee:</p>
+                <ul>
+                    <li>The absence of errors in the analyses;</li>
+                    <li>The continuity or permanent availability of the service;</li>
+                    <li>The suitability of results for a specific use.</li>
+                </ul>
+
+                <h3>2. Use at Your Own Risk</h3>
+                <p>Use of AI Detective is at the user's sole risk and responsibility. The publisher disclaims any liability in case of:</p>
+                <ul>
+                    <li>Direct or indirect damage resulting from the use of results;</li>
+                    <li>Loss of data or profits;</li>
+                    <li>Damage to reputation or third-party rights.</li>
+                </ul>
+
+                <h3>3. External Links</h3>
+                <p>AI Detective may contain links to third-party sites. The publisher has no control over these sites and disclaims any responsibility for their content.</p>
+            </div>
+        </section>
+
+        <!-- INTELLECTUAL PROPERTY SECTION -->
+        <section id="intellectual" class="legal-section">
+            <div class="legal-section-header">
+                <div class="legal-section-icon">
+                    <i class="fas fa-copyright"></i>
+                </div>
+                <div>
+                    <h2 class="legal-section-title">Intellectual Property</h2>
+                    <p class="legal-section-subtitle">Copyright and trademarks</p>
+                </div>
+            </div>
+            <div class="legal-content">
+                <h3>1. Site Content</h3>
+                <p>All elements composing the AI Detective site (texts, logos, icons, source code, design) are protected by copyright and belong to Dragone Technology, unless explicitly stated otherwise.</p>
+
+                <h3>2. Third-Party Technologies</h3>
+                <p>AI Detective uses open-source technologies and third-party models:</p>
+                <ul>
+                    <li><strong>TensorFlow.js</strong> and <strong>MobileNet</strong>: © Google - Apache 2.0 License</li>
+                    <li><strong>LLaVA</strong>: © University of Wisconsin-Madison - Commercial License</li>
+                    <li><strong>Cloudflare Workers AI</strong>: © Cloudflare, Inc.</li>
+                    <li><strong>Font Awesome</strong> Icons: © Fonticons, Inc. - CC BY 4.0 License</li>
+                </ul>
+
+                <h3>3. Submitted Images</h3>
+                <p>The images you submit for analysis remain your property. The publisher claims no rights over them. However, you warrant that you hold the necessary rights to submit these images for analysis.</p>
+            </div>
+        </section>
+
+        <!-- MODIFICATIONS SECTION -->
+        <section class="legal-section">
+            <div class="legal-section-header">
+                <div class="legal-section-icon">
+                    <i class="fas fa-pen"></i>
+                </div>
+                <div>
+                    <h2 class="legal-section-title">Modifications of Terms</h2>
+                    <p class="legal-section-subtitle">Right to modify and information</p>
+                </div>
+            </div>
+            <div class="legal-content">
+                <p>The publisher reserves the right to modify these terms at any time. Modifications take effect upon publication. It is the user's responsibility to regularly check this page for any changes.</p>
+                <p>By continuing to use AI Detective after modifications are published, you implicitly accept the new terms.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="legal-section">
+            <div class="legal-section-header">
+                <div class="legal-section-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                    <h2 class="legal-section-title">Contact</h2>
+                    <p class="legal-section-subtitle">For any questions or complaints</p>
+                </div>
+            </div>
+            <div class="legal-content">
+                <p>For any questions regarding these legal notices, the use of the tool, or to report inappropriate content, you can contact us:</p>
+                <p>
+                    <i class="fas fa-envelope" style="color: var(--neon); width: 20px;"></i> <strong>Email:</strong> <a href="mailto:dragonetechnology@gmail.com" style="color: var(--neon);">dragonetechnology@gmail.com</a><br>
+                    <i class="fas fa-clock" style="color: var(--neon); width: 20px;"></i> <strong>Response Time:</strong> Within 48 business hours
+                </p>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo" style="margin-bottom:1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <img src="logo.png" alt="AI Detective" width="22" height="22" style="border-radius: 4px;">
+                    <span class="logo-text">AI<span class="logo-highlight">Detective</span></span>
+                </div>
+                <p>Multi-model AI image &amp; video probability analysis, powered by @pocket_coder by Dragonetechnology</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/pocket.coder?igsh=MXAya2V4dzltN24wOQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.threads.net/" target="_blank" rel="noopener noreferrer" aria-label="Threads"><i class="fab fa-threads"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Technologies</h4>
+                <a href="https://www.tensorflow.org/js" target="_blank" rel="noopener noreferrer">TensorFlow.js</a>
+                <a href="https://developers.cloudflare.com/workers-ai/" target="_blank" rel="noopener noreferrer">Cloudflare AI</a>
+                <a href="https://llava-vl.github.io/" target="_blank" rel="noopener noreferrer">LLaVA-1.5</a>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <a href="legal.html">Privacy Policy</a>
+                <a href="legal.html">Terms of Use</a>        
+                <a href="legal.html">Legal Notice</a>       
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 AI Detective — Probabilistic AI Analysis System · Images &amp; Videos · by @pocket_coder by Dragonetechnology</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu
+        (function () {
+            const btn = document.getElementById('mobileMenuBtn');
+            const icon = document.getElementById('menuIcon');
+            const drawer = document.getElementById('mobileDrawer');
+            const navbar = document.getElementById('navbar');
+            let isOpen = false;
+
+            function openDrawer() {
+                isOpen = true;
+                drawer.classList.add('open');
+                icon.className = 'fas fa-times';
+                btn.setAttribute('aria-label', 'Close menu');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeDrawer() {
+                isOpen = false;
+                drawer.classList.remove('open');
+                icon.className = 'fas fa-bars';
+                btn.setAttribute('aria-label', 'Open menu');
+                document.body.style.overflow = '';
+            }
+
+            if (btn) {
+                btn.addEventListener('click', () => isOpen ? closeDrawer() : openDrawer());
+            }
+
+            document.addEventListener('click', (e) => {
+                if (isOpen && drawer && !drawer.contains(e.target) && !btn.contains(e.target)) closeDrawer();
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && isOpen) closeDrawer();
+            });
+
+            window.addEventListener('scroll', () => {
+                if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 20);
+            });
+        })();
+    </script>
+
+</body>
+</html>
